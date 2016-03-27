@@ -1,0 +1,40 @@
+{
+ "name": "flare",
+ "children": [
+  {
+   "name": "thesisreport",
+   "children": [
+    {
+     "name": "Introduction",
+     "children": [
+      {"name": "1.1 Introduction", "size": 1375},
+      {"name": "1.2 Problem definition", "size": 1153},
+      {"name": "1.3 Research questions", "size": 189}
+     ]
+    },
+    {
+     "name": "body",
+     "children": [
+      {"name": "Study area", "size": 314},
+      {"name": "Methods RQ1", "size": 620},
+      {"name": "Methods RQ2", "size": 993},
+      {"name": "Methods RQ3", "size": 2099},
+      {"name": "Methods RQ4", "size": 1277},
+      {"name": "Results RQ1", "size": 1853},
+      {"name": "Results RQ2" , "size": 610},
+      {"name": "Results RQ3", "size": 435},
+      {"name": "Results RQ4", "size": 1910}
+     ]
+    },
+    {
+     "name": "conclusion",
+     "children": [
+      {"name": "Consclusion", "size": 1384},
+      {"name": "Discussion", "size": 1855},
+      {"name": "Recommendations", "size": 765}
+     ]
+    }
+   ]
+  }
+  ]
+}

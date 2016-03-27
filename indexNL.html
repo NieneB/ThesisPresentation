@@ -1,0 +1,321 @@
+<!doctype html>
+<html lang="en">
+
+	<head>
+		<meta charset="utf-8">
+
+		<title>Facing the unfriendly street</title>
+
+		<meta name="description" content="Presentation for Msc Collocium">
+		<meta name="author" content="Niene Boeijen">
+
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
+
+		<link rel="stylesheet" href="css/reveal.css">
+		<link rel="stylesheet" href="css/black.css" id="theme">
+
+		<!-- Code syntax highlighting -->
+		<link rel="stylesheet" href="lib/css/zenburn.css">
+
+
+		<script>
+			var link = document.createElement( 'link' );
+			link.rel = 'stylesheet';
+			link.type = 'text/css';
+			link.href = window.location.search.match( /print-pdf/gi ) ? 'css/print/pdf.css' : 'css/print/paper.css';
+			document.getElementsByTagName( 'head' )[0].appendChild( link );
+		</script>
+
+		<link rel="stylesheet" href="css/style.css" type="text/css" media="screen">
+		
+
+	</head>
+
+	<body>
+
+		<div class="reveal">
+
+			<!-- Any section element inside of this container is displayed as a slide  data-background="img/rollator_map.jpg" data-background-size='80%'-->
+			<div class="slides">
+
+
+<!-- °°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°PART 1 Introduction 5 min °°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°° -->			
+				<section data-background="img/rollator1.png" data-background-size='100%'>
+					<h1>Facing the unfriendly street</h1>
+					<blockquote>Mapping critical walkability factors of elderly people walking with a Rollator, in the outdoor public space of Amsterdam the Netherlands.</blockquote>
+					<p><small><strong>MSc Colloquium by: Niene Boeijen</strong></small></p>
+				</section>
+
+				<section data-state='openingslide'>
+					<h5> Content </h5>
+					<!-- <svg class='bubleCharts'> </svg>			 -->		
+				</section>
+
+				<section id="fragments">
+					<h5> Introduction </h5>
+					
+					<section>
+						<span class="fragment fade-in">
+								<img src="img/I1_number_elderly.png" width="60%"></img>	
+   						</span>
+						<span class="fragment fade-in">
+         						<p> Municipalities responsible </p>
+   						</span>
+
+   						<span class="fragment fade-in">
+         						<p> Higher demand, less funds </p>
+   						</span>
+   						
+						<span class="fragment fade-in">
+        						<h6 > Asks for new solutions</h6>
+   						</span>
+   					</section>
+   					
+   					<section>
+   						<span class="fragment fade-in">
+        						<p> Let elderly live independently as long as possible </p>
+        						<img src="img/rollator3vrouwen.jpg" width="65%">
+   						</span>
+   						<span class="fragment fade-in">
+        						<p > Living independently means being mobile for personal care and have access to the public space for grocery shopping, social contacts and physical activity. </p>
+   						</span>
+					</section>
+
+					<section>
+						<h6> The quality of the immediate environment is a significant determinant of elders well-being, independence and quality of life. </h6> 
+						<img src="img/rollator_map.jpg" width="60%">
+						<h7 class="fragment">Walkability</h7>
+					</section>
+				</section>
+
+				<section>
+					<h5> Problem definition</h5>
+					<section>
+						<p>The forgotten pedestrian</p>
+						<p> policy, research, data</p>
+						
+						<h6 class="fragment">The vicious circle of no data- no awareness - no priority - no research - no data, needs to be broken.</h6>
+					</section>
+
+					<section>
+							<h6>GIS can help to map and study the environment and neighbourhood characteristics that influences outdoor walkability quality among older people and by doing so, fill a bit of the knowledge gap</h6>
+					</section>
+				</section>
+
+					<!-- <section>
+						<h6> Goal </h6>
+						Create awareness of the forgotten pedestrian in policy, research and data. Awareness may trigger possible action at decentralized governments to increase walkability quality and so increase walking activity of elderly people. To keep them fit and healthy, capable to live independently and grow old in their own house and environment. All contributing to less need for healthcare for the growing share of elder population and reduce the cost of elder care.
+					</section> -->
+					
+				<section>
+					<h5> Objective </h5>
+					<p>Analyse and visualize geodata to explore the critical walkability factors for elderly depended on a rollator in the urban outdoor space. </p>
+				</section>
+				<section>
+					<h5>Research Questions</h5>
+					 	<ol>
+					   		<li>What are the critical walkability factors hindering elderly with a rollator in the outdoor environment?</li>
+					   		<li>Which existing geodata can be used to map and analyse these critical walkability factors?</li>
+					   		<li>What geodata can be collected with a smart walker to map and analyse these critical walkability factors? </li>
+					   		<li>How can the available and measured geodata be compared? </li>
+					   	</ol>
+				</section>
+
+<!-- °°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°PART 2 RQ 1 & 2°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°° -->
+            	<section>
+					<h5>RQ 1. Critical Walkability factors</h6>
+					<section>
+						<p>Literature research</p>
+						<p>Interviews</p>
+						<p> </p>
+						<h6 class="fragment">Top 3 found walkability factors: </h6>
+					</section>
+					
+					<section>
+						<img src="img/foutefietsen.jpg" width="60%">
+						<h6 class="fragment highlight-red" >Wrongly parked bikes and cars</h6>
+					</section>
+					<section>
+						<img src="img/helling.jpg" width="60%">
+						<h6>Sloping pavements</h6>
+					</section>
+					<section>
+						<img src="img/stoep.jpg" width="60%">
+						<h6>Irregular pavement, cobbled surfaces or bad maintenance</h6>
+					</section>
+            	</section> 
+
+				<section>
+					<h5>RQ 2. Available geodata</h5>
+
+					<section>
+						<p>Basics:</p>
+						<h6>Mapping pedestrian area</h6>
+						
+						<!-- <p> Provided by municipality HOW</p>
+						<p>GBKA for mapping pedestrian area METHOD </p>
+	
+						  	No other sources of data found..  -->
+					</section>
+						<section>
+						  	<p>GBKA for mapping pedestrian area</p>
+						  	<img src="img/gbka.png" width="60%">
+						  	<!-- <p>Assumptions outcome</p> -->
+					</section>
+			
+					<section>
+						<h6>Mapping slope</h6>
+						<p>4% rule found in Leidraad</p>
+						<p>AHN2 accuracy </p>
+					</section>
+				  	
+				  	<section>
+				  		<img src="img/slope.png">
+				  		<p>A lot is not suitable</p>
+				  	</section>
+				
+            	</section> 
+
+				<section>
+					<h5>RQ 3. Collecting geodata</h5>
+					<section>
+						<p>Mapping irregular surfaces with accelerometer</p>
+						<p>Set-up Rollator</p>
+						<img src="img/rollatorsetup.png">
+					</section>
+					<section>
+						<img src="img/surfaces.png">
+					</section>
+					<section>
+						<p>Results </p>
+						<img src="img/surfacesacceleration.png" width="60%">
+					</section>					
+					<section>
+						<p>Comparison Matthews et al. 2003</p>
+						<img src="img/matthews.png" width="70%">
+					</section>			  	
+            	</section> 
+<!-- °°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°PART 3 CHANGE POINT °°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°° -->
+
+            	<section>
+					<h5>RQ 4. Comparing available and collected</h5>
+					<section>
+						<p>Rollatorloop</p>
+						<img src="img/rollatorloop.jpg">
+						<h7 class='fragment' style="color: white; top: 3	0%;">Failed</h7>
+					</section>
+						<section>
+						<p>Same Set-up Rollator</p>
+						<img src="img/rollatorsetup.png">
+					</section>
+					<section>
+						<p class="fragment">GPS + Accelerometer + Slope </p>
+						<p class="fragment">Time series</p>
+						<h6 class="fragment">Change point method</h6>
+					</section>
+					<!-- <section>
+						<h6> The Change Point Method</h6>
+						<p>Statistical characteristics change </p>
+					</section> -->
+					<section>
+						<img src="img/meetrollator.png" width="70%">
+					</section>
+
+					<section>
+						All the routes we walked. 3x
+					</section>
+					<section>
+						Show interesting locations and events
+					</section>
+				
+            	</section> 
+
+<!-- °°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°PART 4 Conclusion °°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°° -->
+				<section>
+					<h5>Conclusion</h5>
+					<section>
+						<h6>Recap</h6>
+					</section>
+					<section>
+						<h6>Conclusions</h6>
+					</section>
+					<section>
+						<h6>Discussion</h6>
+					</section>
+					<section>
+						<h6>Final words</h6>
+						<p>Thank you</p>
+					</section>
+            	</section> 
+
+            	<section  data-background="img/rollator_foto.jpg" data-background-size='100%' >
+            		<h1>Questions?</h1>
+            	</section>
+
+
+				
+
+				<!-- <section data-state="myslide1">
+					<p> Hallo World </p>
+					<svg class="testrect"></svg>
+            	</section> -->
+
+            	<!-- <section data-state="myslide2">
+					<p> Hallo World </p>
+					<svg class="chart"></svg>
+            	</section> -->
+		</div>
+			
+		<script src="lib/js/head.min.js"></script>
+		<script src="js/reveal.js"></script>
+
+		<script>
+
+			// Full list of configuration options available at:
+			// https://github.com/hakimel/reveal.js#configuration
+			Reveal.initialize({
+				// // Parallax background image
+  		// 		parallaxBackgroundImage: 'img/rollator1.jpg', // e.g. "https://s3.amazonaws.com/hakim-static/reveal-js/reveal-parallax-1.jpg"
+
+    // 			// Parallax background size
+    // 			parallaxBackgroundSize: '1644px 1096px', // CSS syntax, e.g. "2100px 900px" - currently only pixels are supported (don't use % or auto)
+
+    // 			// Number of pixels to move the parallax background per slide
+    // 			// - Calculated automatically unless specified
+    // 			// - Set to 0 to disable movement along an axis
+    // 			parallaxBackgroundHorizontal: 50,
+    // 			parallaxBackgroundVertical: 100,
+
+
+				controls: true,
+				progress: true,
+				history: true,
+				center: true,
+
+				transition: 'slide', // none/fade/slide/convex/concave/zoom
+
+				// Optional reveal.js plugins
+				dependencies: [
+					{ src: 'lib/js/classList.js', condition: function() { return !document.body.classList; } },
+					{ src: 'plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					{ src: 'plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					{ src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } },
+					{ src: 'plugin/zoom-js/zoom.js', async: true },
+					{ src: 'plugin/notes/notes.js', async: true }
+				]
+
+			});
+
+		</script>
+
+
+		<!-- making my own interactive data visualiation in the slide -->
+		<script src="http://d3js.org/d3.v3.min.js"></script>
+		<script src="script.js" type="text/javascript" charset="utf-8"></script> 	
+
+	</body>
+</html>
+
