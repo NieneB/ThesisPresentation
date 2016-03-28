@@ -129,7 +129,7 @@
 
 <!-- °°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°PART 2 RQ 1 & 2°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°° -->
             	<section>
-					<h5>Finding the Critical Walkability factors</h6>
+					<h5>1. Finding the Critical Walkability factors</h6>
 					<section>
 						<p>Literature research</p>
 						<p>Interviews</p>
@@ -152,7 +152,7 @@
             	</section> 
 
 				<section>
-					<h5>Mapping walkability with available geodata</h5>
+					<h5>2. Mapping walkability with available geodata</h5>
 
 					<!-- <section>
 						<p>Basics:</p>
@@ -178,8 +178,8 @@
 					<section>
 						<h6 class="fragment highlight-red">Mapping irregular surfaces</h6>
 						<h6>Mapping slope</h6>
-						<p class="fragment">4% slope </p>
 						<p class="fragment">AHN2</p>
+						<p class="fragment">4% slope </p>
 					</section>
 				  	
 				  	<section>
@@ -190,7 +190,7 @@
             	</section> 
 
 				<section >
-					<h5>Mapping walkability with collecting geodata</h5>
+					<h5>3. Mapping walkability with collecting geodata</h5>
 					<section>
 						<h6>
 							Mapping irregular surfaces
@@ -198,7 +198,7 @@
 					
 						<p> Using an accelerometer</p>
 						<p>Set-up Rollator</p>
-						<img src="img/rollatorsetup.png">
+						<img src="img/rollatorsetup.png" width="60%">
 						
 					</section>
 					<section>
@@ -216,33 +216,42 @@
 <!-- °°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°PART 3 CHANGE POINT °°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°° -->
 
             	<section>
-					<h5>Comparing available and collected</h5>
+					<h5>4. Comparing available and collected</h5>
 					<section>
-						<p>Rollatorloop</p>
+						<p>Optimal circumstances</p>
+						<p>Regular walking speed, regular surface</p>
+						<p>GPS + Accelerometer + Slope map </p>
+					</section>
+
+					<section>
+						<p>"Rollatorloop" event</p>
 						<img src="img/rollatorloop.jpg">
-						<h7 class='fragment' style="color: white; top: 30%">Failed</h7>
-					</section>
-					<section>
-						<p>Same Set-up Rollator</p>
-						<img src="img/rollatorsetup.png">
-						<p>New routes walked myself</p>
-					</section>
-					
+						<!-- <h7 class='fragment' style="color: white; top: 30%">Failed</h7>
+ -->				</section>
 					<section>
 						<img src="img/wageningen.png">
 					</section>
+
 					<section>
-						<p>GPS + Accelerometer + Slope map </p>
-						<p class="fragment">Time series</p>
-						<text font-size="38px" class="fragment">$F_{(t)} = [A_{z}, speed, slope]$ </text>
-						<p class="fragment"> With coordinates in RDnew <text> $(x,y)$</text> </p>
-						<h6 class="fragment">Change point method</h6>
+						<p>Same Set-up Rollator</p>
+						<img src="img/rollatorsetup.png" width="60%">
+						<p>Garmin </p>
+					</section>
+					
+					
+					<section>
+						
+						<p>Time series</p>
+						<text font-size="38px" style="color: #4aadb7">$F_{(t)} = [A_{z}, speed, slope]$ </text>
+						<p > With coordinates in RDnew <text> $(x,y)$</text> </p>
+						
 					</section>
 					<section>
 						<h6> The Change Point Method</h6>
-						<p>Statistical characteristics change </p>
-						<p>Properties of segment <text>${F_{1}, .... , F_{τ}}$ </text> and segment <text>${F_{τ+1}, .... , F_{n}}$ </text> are different in mean or variance.</p>
-						<p>The $m$ change-points will split the data into <text> $m + 1$ segments </text></p>
+						<p>R Package developed by Killick et.al 2014</p>
+						<p>Statistical properties of characteristics change </p>
+						<p> Mean or variance</p>
+						
 						
 					</section>
 					<section>
@@ -254,9 +263,9 @@
 						<img src="img/mapmeetrollatorlegend.png">
 					</section>
 					<section>
-						<img src="img/mapmeetrollatorzoom.png" width="60%">
-						<img src="img/bocht.png" width="60%"> 
-						<img src="img/stoeprand.jpg" width="60%">
+						<img src="img/mapmeetrollatorzoom.png" width="80%">
+						<img src="img/bocht.png" width="40%"> 
+						<img src="img/stoeprand.jpg" width="40%" >
 					</section>
 					<section>
 						<img src="img/mapbike.png" width="80%">
@@ -276,37 +285,41 @@
 					<section>
 						<img src="img/mapleicazoom.png" width="80%">
 						<img src="img/stoeprandleica2.png" width="40%"> 
-						<img src="img/stoeprandleica.png" width="40%" style="transform: rotate(180deg); -webkit-transform: rotate(180deg);"> 
+						<img src="img/stoeprandleica.png" width="40%"> 
 					</section>
 				
             	</section> 
 
 <!-- °°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°PART 4 Conclusion °°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°° -->
 				<section>
-					<h5>Discussion & Conclusion</h5>
+					<h5>Conclusion & Discussion</h5>
 					
 					<section>
 						<h6>Conclusions</h6>
-						<p>The pedestrian is forgotten</p>
-						<p>Collecting data with an accelerometer</p>
-						<p>Comparison with changepoint method</p>
-						<h5 class="fragment">Obstacle detection with a rollator</h5>
+						<ol>
+							<li>Confirmed that the pedestrian is forgotten.</li>
+							<li>Mapping irregular surfaces with an accelerometer is possible.</li>
+							<li>Comparison with changepoint method shows potential for obstacle detection.</li>
+						</ol>
 					</section>
 
 					<section>
 						<h6>Discussion</h6>
-						<p>Accuracy is key</p>
-						<p>Accelerometer quality</p>
-						<p>Changepoint method</p>
-						<p>Influenced experiments</p>
+						<ol>
+							<li>Accuracy is key and critical for walkability studies.</li>
+							<li>Accelerometer sensor quality is unknown.</li>
+							<li>Changepoint method has more possibilities.</li>
+							<li>Influenced experiments.</li>
+						</ol>
 					</section>
 					<section>
 						<h6>Final words</h6>
-						<p>Thank you</p>
+						
 					</section>
             	</section> 
 
             	<section  data-background="img/rollator_foto.jpg" data-background-size='100%' >
+            		<h1><small> Thank you for your attention </small></h1>
             		<h1>Questions?</h1>
             	</section>
 
@@ -342,7 +355,7 @@
     			// - Calculated automatically unless specified
     			// - Set to 0 to disable movement along an axis
     			parallaxBackgroundHorizontal: 80,
-    			parallaxBackgroundVertical: 90,
+    			parallaxBackgroundVertical: 80,
 
 
 				controls: true,
