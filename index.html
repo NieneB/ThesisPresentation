@@ -20,16 +20,15 @@
 		<!-- Code syntax highlighting -->
 		<link rel="stylesheet" href="lib/css/zenburn.css">
 
-
 		<script>
-			var link = document.createElement( 'link' );
-			link.rel = 'stylesheet';
-			link.type = 'text/css';
-			link.href = window.location.search.match( /print-pdf/gi ) ? 'css/print/pdf.css' : 'css/print/paper.css';
-			document.getElementsByTagName( 'head' )[0].appendChild( link );
+  			if( window.location.search.match( /print-pdf/gi ) ) {
+			    var link = document.createElement( 'link' );
+			    link.rel = 'stylesheet';
+			    link.type = 'text/css';
+			    link.href = 'css/print/pdf.css';
+			    document.getElementsByTagName( 'head' )[0].appendChild( link );
+  			}
 		</script>
-
-		<link rel="stylesheet" href="css/style.css" type="text/css" media="screen">
 		
 
 	</head>
@@ -184,7 +183,6 @@
 				  	
 				  	<section>
 				  		<img src="img/slope.png" width="70%" style="margin-top:10%">
-				  		<p>A lot is not suitable</p>
 				  	</section>
 				
             	</section> 
@@ -319,7 +317,8 @@
             	</section> 
 
             	<section  data-background="img/rollator_foto.jpg" data-background-size='100%' >
-            		<h1><small> Thank you for your attention </small></h1>
+            		<h1><small> Thank you  </small></h1>
+            		<h1><small>for your attention</small></h1>
             		<h1>Questions?</h1>
             	</section>
 
@@ -355,7 +354,7 @@
     			// - Calculated automatically unless specified
     			// - Set to 0 to disable movement along an axis
     			parallaxBackgroundHorizontal: 80,
-    			parallaxBackgroundVertical: 80,
+    			parallaxBackgroundVertical: 75,
 
 
 				controls: true,
